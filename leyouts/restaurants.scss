@@ -1,0 +1,253 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@import "../utils/animations" ;
+@import "../utils/variables" ;
+
+html{
+    width: 400px;
+}
+body{
+    font-family: 'roboto', sans-serif;
+    width: 400px;
+}
+
+.return_logo{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    justify-content: space-around;
+
+        img{
+            display: block;
+            width: 205px;
+            height: 35px;
+            margin-left: 50px;
+            margin-right: auto;
+            object-fit: cover;
+            
+        }
+        i{
+            font-size: 25px;
+            text-decoration: none;
+            color: black;
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+    }
+aside{
+    width: 100%;
+    img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+
+    }
+}
+section{
+    background-color:#f6f6f6;
+    article{
+        position: relative;
+        width: 400px;
+        background-color:#f6f6f6;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        bottom: 50px;
+        padding-bottom: 50px;
+        .titre_like{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 50px;
+            padding-bottom: 30px;
+    
+            .h2{
+                font-family: 'Shrikhand', sans-serif;
+                font-size: 25px;
+                color: black;
+            }
+            .like{
+        
+                .plein{
+                    background: $color_gradient;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    display: none;
+                    font-size: 30px;
+                    transform: scale(0);
+                    animation: 900ms appears;
+                    
+                
+                }
+                .contoure{
+                    font-size: 30px;
+                    color: black;
+                }
+                &:active .contoure{
+                    display: none;
+                
+                }
+                &:active .plein{
+                    display: block;
+                    transform: scale(1.1);
+                    
+                }
+            }           
+        }
+        .choose{
+            .top{
+                margin-left: 20px;
+                .h3{
+                    color: #818181;
+                    font-weight: 300;
+                    margin-bottom: 10px;
+                    margin-left: 15px;
+                }
+                .line{
+                    border-top: 4px solid $color_tertiaire;
+                    width: 10%;
+                    margin-bottom: 30px;
+                }
+    
+            }
+            .cards{
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: white;
+                justify-content: space-between;
+                box-shadow: 0 0 20px #0000002e;
+                border-radius: 15px;
+                width: 380px;
+                height: 70px;
+                text-decoration: none;
+                color: black;
+                animation: appears 5s both;
+                margin-bottom: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                &:active{
+                        .check{
+                            margin-right: 0px;
+                            .ok{
+                                animation: rotatecheck 1s;
+                            } 
+                        }
+                }
+                
+                .menu_detail{
+                    margin-left: 20px;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    width: 80%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    h4{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    p{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+    
+                }
+                .price{
+                    margin-right: 0px;
+                    margin-left: 10px;
+                    margin-left: 10px;
+                    margin-top: 20px;
+                    p{
+                        margin-top: 10px;
+                        margin-right: 10px;
+                    }
+    
+                }
+                .check{
+                    display: flex;
+                    color: white;
+                    background-color: $color_tertiaire;
+                    align-items: center;
+                    margin-right: -75px;
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    padding: 0 20px 0 20px;
+                    .ok{
+                        font-size: 30px;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+                }
+            }    
+        }
+    }
+}
+
+
+.cmd{
+    border-radius: 0%;
+    .commander {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: "roboto", sans-serif;
+            background: $color_gradient;
+            box-shadow: 0px 0px 10px rgb(188, 188, 188);
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-radius: 40px;
+            &:hover{
+                box-shadow: 0px 0px 30px rgb(188, 188, 188);
+                background:$color_gradient;
+            }
+        }
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    padding: 20px;
+    line-height: 30px;
+    h1{
+        font-family: 'shrikhand',sans-serif;
+        color: white;
+        font-size: 25px;
+        margin-bottom: 20px;
+        opacity: 0,5;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        i{
+            color: white;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-family: 'roboto',sans-serif;
+            
+        }
+        .proposer_rest i{
+            margin-right: 14px;
+        }
+        .partenaire i{
+            margin-right: 8px;
+        }
+        .mentions_contact{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

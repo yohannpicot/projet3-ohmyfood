@@ -1,0 +1,35 @@
+/*---------------------------- Animations Restaurants -----------------------------*/
+
+@keyframes appears {   
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes rotatecheck {
+    0%{
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+/*---------------------------- Animations Acceuil-----------------------------------*/
+@keyframes spinner{
+    to {
+       transform: rotate(1turn);
+       animation-fill-mode: forwards ;
+    }
+ }
+@keyframes load{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        animation-fill-mode: forwards;
+        z-index: -5;
+    }
+}

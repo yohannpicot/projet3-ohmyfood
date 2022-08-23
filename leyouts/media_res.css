@@ -1,0 +1,133 @@
+@charset "UTF-8";
+@media screen and (min-width: 401px) and (max-width: 998px) {
+  html {
+    width: auto;
+  }
+  body {
+    width: auto;
+  }
+  .return_logo {
+    width: 100%;
+  }
+  .return_logo img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  aside img {
+    width: 100%;
+  }
+  section article {
+    width: auto;
+  }
+  section article .titre_like h2 {
+    font-size: 30px;
+  }
+  section article .entrées .top {
+    margin-left: 55px;
+  }
+  section article .entrées .cards {
+    width: 90%;
+  }
+  section article .commander a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 20px;
+  }
+  footer {
+    align-items: center;
+  }
+  footer h1 {
+    font-size: 70px;
+    margin-top: 15px;
+  }
+  footer .links {
+    margin-top: 20px;
+  }
+  footer .links .proposer_rest i {
+    font-size: 20px;
+  }
+  footer .links .proposer_rest a {
+    font-size: 17px;
+  }
+  footer .links .partenaire i {
+    font-size: 20px;
+  }
+  footer .links .partenaire a {
+    font-size: 17px;
+  }
+  footer .links .mentions_contact a {
+    margin-left: 37px;
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 999px) and (max-width: 1366px) {
+  html {
+    width: auto;
+  }
+  body {
+    width: auto;
+  }
+  .return_logo {
+    width: 100%;
+  }
+  .return_logo img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 50px;
+  }
+  .return_logo .return:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .return_logo .return:hover i {
+    color: #99E2D0;
+  }
+  section article {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  section article .titre_like {
+    justify-content: center;
+  }
+  section article .titre_like h2 {
+    margin-right: 20px;
+    font-size: 30px;
+  }
+  section article .composition {
+    display: flex;
+    justify-content: center;
+  }
+  section article .composition .choose .cards {
+    margin: 20px;
+  }
+  footer {
+    align-items: center;
+  }
+  footer h1 {
+    font-size: 70px;
+    margin-top: 15px;
+  }
+  footer .links {
+    margin-top: 20px;
+  }
+  footer .links .proposer_rest i {
+    font-size: 20px;
+  }
+  footer .links .proposer_rest a {
+    font-size: 17px;
+  }
+  footer .links .partenaire i {
+    font-size: 20px;
+  }
+  footer .links .partenaire a {
+    font-size: 17px;
+  }
+  footer .links .mentions_contact a {
+    margin-left: 37px;
+    font-size: 17px;
+  }
+}/*# sourceMappingURL=media_res.css.map */

@@ -1,0 +1,70 @@
+/*---------------------------- Animations Restaurants -----------------------------*/
+@-webkit-keyframes appears {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appears {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes rotatecheck {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotatecheck {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/*---------------------------- Animations Acceuil-----------------------------------*/
+@-webkit-keyframes spinner {
+  to {
+    transform: rotate(1turn);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+}
+@keyframes spinner {
+  to {
+    transform: rotate(1turn);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+}
+@-webkit-keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    z-index: -5;
+  }
+}
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    z-index: -5;
+  }
+}/*# sourceMappingURL=animations.css.map */

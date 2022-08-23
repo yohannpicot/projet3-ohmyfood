@@ -1,0 +1,165 @@
+@media screen and (min-width:401px) and (max-width:998px){
+    html{
+        width: auto;
+    }
+    body{
+        width: auto;
+    }
+    .return_logo{
+        width: 100%;
+
+        img{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    aside{
+        img{
+            width: 100%;
+            
+        }
+    }
+    section{
+        article{
+            width: auto;
+            .titre_like{
+                h2{
+                    font-size: 30px;
+                }
+            }
+    
+            .entrées{
+                .top{
+                    margin-left: 55px;
+                }
+                .cards{
+                    width: 90%;
+                }
+            }
+            .commander{
+                a{
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    padding-left: 80px;
+                    padding-right: 80px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    footer{
+        align-items: center;
+        h1{
+            font-size: 70px;
+            margin-top: 15px;
+        }
+        .links{
+            margin-top: 20px;
+            .proposer_rest{
+                i{
+                    font-size: 20px;
+                }
+                a{
+                    font-size: 17px;
+                }
+            }
+            .partenaire{
+                i{
+                    font-size: 20px;
+                }
+                a{
+                    font-size: 17px;
+                }
+            }
+            .mentions_contact{
+                a{
+                    margin-left: 37px;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:999px) and (max-width:1366px){
+    html{
+        width: auto;
+    }
+    body{
+        width: auto;
+    }
+    .return_logo{
+        width: 100%;
+
+        img{
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            height: 50px;
+        }
+        .return{
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+                i{
+                    color: #99E2D0;
+                }
+            }
+        }
+    }
+    section{
+        article{
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            .titre_like{
+                justify-content: center;
+                h2{
+                    margin-right: 20px;
+                    font-size: 30px;
+                }
+            }
+            .composition{
+                display: flex;
+                justify-content: center;
+                .choose{
+                    .cards{
+                        margin: 20px;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        align-items: center;
+        h1{
+            font-size: 70px;
+            margin-top: 15px;
+        }
+        .links{
+            margin-top: 20px;
+            .proposer_rest{
+                i{
+                    font-size: 20px;
+                }
+                a{
+                    font-size: 17px;
+                }
+            }
+            .partenaire{
+                i{
+                    font-size: 20px;
+                }
+                a{
+                    font-size: 17px;
+                }
+            }
+            .mentions_contact{
+                a{
+                    margin-left: 37px;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    
+}

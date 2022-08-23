@@ -1,0 +1,424 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*---------------------------- Animations Restaurants -----------------------------*/
+@-webkit-keyframes appears {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appears {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes rotatecheck {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotatecheck {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/*---------------------------- Animations Acceuil-----------------------------------*/
+@-webkit-keyframes spinner {
+  to {
+    transform: rotate(1turn);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+}
+@keyframes spinner {
+  to {
+    transform: rotate(1turn);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+}
+@-webkit-keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    z-index: -5;
+  }
+}
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    z-index: -5;
+  }
+}
+/*--------------------------- Les Couleurs---------------------------------------*/
+html {
+  max-width: 400px;
+}
+
+.loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  flex-direction: column;
+  inset: 0px;
+  z-index: 1;
+  background-color: hsla(0deg, 0%, 94%, 0.8);
+  -webkit-animation: load 1s both;
+          animation: load 1s both;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  transform-origin: top;
+}
+.loader .spinner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  border: 14.1px solid;
+  border-color: #9356DC;
+  border-right-color: #FF79DA;
+  -webkit-animation: spinner 1s infinite linear;
+          animation: spinner 1s infinite linear;
+}
+
+#logo {
+  width: 100%;
+}
+#logo img {
+  display: block;
+  width: 300px;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#address {
+  width: 100%;
+  background-color: rgb(238, 238, 238);
+  box-shadow: inset 5px 15px 5px -13px rgb(173, 173, 173);
+  margin-top: 10px;
+}
+#address #address_bloc {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+#address #address_bloc p {
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+}
+#address #address_bloc i {
+  font-size: 20px;
+  margin-right: 20px;
+}
+#address #link_address {
+  display: none;
+}
+
+#reserve {
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+#reserve h2 {
+  font-family: "roboto", sans sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#reserve p {
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 100;
+}
+#reserve #button_reserve {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+#reserve #button_reserve a {
+  text-decoration: none;
+  color: white;
+  font-family: "roboto", sans-serif;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 0px 10px rgb(188, 188, 188);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 40px;
+}
+#reserve #button_reserve a:hover {
+  box-shadow: 0px 0px 30px rgb(188, 188, 188);
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+#fonctionnement {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#fonctionnement h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#fonctionnement #selection {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+#fonctionnement #selection .selection_button {
+  display: flex;
+  position: relative;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgb(188, 188, 188);
+  gap: 10px;
+  width: 90%;
+  background-color: rgb(246, 246, 246);
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  border-radius: 20px;
+}
+#fonctionnement #selection .selection_button a {
+  font-family: "roboto", sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 17px;
+}
+#fonctionnement #selection .selection_button p {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: -10px;
+  font-family: "roboto", sans-serif;
+  font-size: 17px;
+  color: white;
+  background-color: #9356DC;
+  border-radius: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#fonctionnement #selection .selection_button i {
+  margin-left: 45px;
+  margin-right: 20px;
+  font-size: 20px;
+  color: rgb(161, 161, 161);
+}
+#fonctionnement #selection .selection_button i:hover {
+  color: #9356DC;
+}
+#fonctionnement #selection .selection_button:hover {
+  background-color: rgb(245, 237, 255);
+  cursor: pointer;
+}
+#fonctionnement #selection .selection_button:hover .cards_fonct i:not(:hover) {
+  color: #9356DC;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+}
+article h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 25px;
+  padding-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+article .cards_res_nwe {
+  display: block;
+  flex-direction: column;
+  position: relative;
+  border-radius: 20px;
+  width: 350px;
+  height: 250px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  font-family: "roboto", sans-serif;
+  box-shadow: 0px 0px 10px rgb(212, 212, 212);
+  text-decoration: none;
+}
+article .cards_res_nwe:hover {
+  cursor: pointer;
+}
+article .cards_res_nwe img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 350px;
+  height: 170px;
+}
+article .cards_res_nwe h3 {
+  position: absolute;
+  background-color: rgb(153, 226, 208);
+  color: rgb(30, 153, 122);
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  left: 250px;
+  top: 20px;
+}
+article .cards_res_nwe h4 {
+  color: black;
+}
+article .cards_res_nwe p {
+  color: black;
+}
+article .bloc_bottom {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+article .text {
+  margin-right: 140px;
+}
+article .text h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  width: 130%;
+}
+article .text p {
+  font-weight: 100;
+  width: 120%;
+}
+article .cards_res {
+  display: block;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 350px;
+  height: 250px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  font-family: "roboto", sans-serif;
+  box-shadow: 0px 0px 10px rgb(212, 212, 212);
+  text-decoration: none;
+}
+article .cards_res img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 350px;
+  height: 170px;
+}
+article .cards_res .text {
+  margin-right: 140px;
+}
+article .cards_res .text h4 {
+  font-size: 18px;
+  color: black;
+  width: 150px;
+}
+article .cards_res .text p {
+  font-weight: 100;
+  color: black;
+}
+article .like .plein {
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: none;
+  font-size: 30px;
+  transform: scale(0);
+  -webkit-animation: 2000ms appears;
+          animation: 2000ms appears;
+}
+article .like .contoure {
+  font-size: 30px;
+  color: black;
+}
+article .like:active .plein {
+  display: block;
+  transform: scale(1.1);
+}
+article .like:active .contoure {
+  display: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  padding: 20px;
+  line-height: 30px;
+}
+footer h1 {
+  font-family: "shrikhand", sans-serif;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 20px;
+  opacity: 0, 5;
+}
+footer .links {
+  display: flex;
+  flex-direction: column;
+}
+footer .links i {
+  color: white;
+}
+footer .links a {
+  color: white;
+  text-decoration: none;
+  font-family: "roboto", sans-serif;
+}
+footer .links .proposer_rest i {
+  margin-right: 14px;
+}
+footer .links .partenaire i {
+  margin-right: 8px;
+}
+footer .links .mentions_contact {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=styles.css.map */

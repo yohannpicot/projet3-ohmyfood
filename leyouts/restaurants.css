@@ -1,0 +1,309 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*---------------------------- Animations Restaurants -----------------------------*/
+@-webkit-keyframes appears {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appears {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes rotatecheck {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotatecheck {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/*---------------------------- Animations Acceuil-----------------------------------*/
+@-webkit-keyframes spinner {
+  to {
+    transform: rotate(1turn);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+}
+@keyframes spinner {
+  to {
+    transform: rotate(1turn);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+}
+@-webkit-keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    z-index: -5;
+  }
+}
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    z-index: -5;
+  }
+}
+/*--------------------------- Les Couleurs---------------------------------------*/
+html {
+  width: 400px;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  width: 400px;
+}
+
+.return_logo {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  justify-content: space-around;
+}
+.return_logo img {
+  display: block;
+  width: 205px;
+  height: 35px;
+  margin-left: 50px;
+  margin-right: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.return_logo i {
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+aside {
+  width: 100%;
+}
+aside img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section {
+  background-color: #f6f6f6;
+}
+section article {
+  position: relative;
+  width: 400px;
+  background-color: #f6f6f6;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  bottom: 50px;
+  padding-bottom: 50px;
+}
+section article .titre_like {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+section article .titre_like .h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 25px;
+  color: black;
+}
+section article .titre_like .like .plein {
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: none;
+  font-size: 30px;
+  transform: scale(0);
+  -webkit-animation: 900ms appears;
+          animation: 900ms appears;
+}
+section article .titre_like .like .contoure {
+  font-size: 30px;
+  color: black;
+}
+section article .titre_like .like:active .contoure {
+  display: none;
+}
+section article .titre_like .like:active .plein {
+  display: block;
+  transform: scale(1.1);
+}
+section article .choose .top {
+  margin-left: 20px;
+}
+section article .choose .top .h3 {
+  color: #818181;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+section article .choose .top .line {
+  border-top: 4px solid #99E2D0;
+  width: 10%;
+  margin-bottom: 30px;
+}
+section article .choose .cards {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  justify-content: space-between;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1803921569);
+  border-radius: 15px;
+  width: 380px;
+  height: 70px;
+  text-decoration: none;
+  color: black;
+  -webkit-animation: appears 5s both;
+          animation: appears 5s both;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section article .choose .cards:active .check {
+  margin-right: 0px;
+}
+section article .choose .cards:active .check .ok {
+  -webkit-animation: rotatecheck 1s;
+          animation: rotatecheck 1s;
+}
+section article .choose .cards .menu_detail {
+  margin-left: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section article .choose .cards .menu_detail h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section article .choose .cards .menu_detail p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section article .choose .cards .price {
+  margin-right: 0px;
+  margin-left: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+section article .choose .cards .price p {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+section article .choose .cards .check {
+  display: flex;
+  color: white;
+  background-color: #99E2D0;
+  align-items: center;
+  margin-right: -75px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 0 20px 0 20px;
+}
+section article .choose .cards .check .ok {
+  font-size: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.cmd {
+  border-radius: 0%;
+}
+.cmd .commander {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.cmd .commander a {
+  text-decoration: none;
+  color: white;
+  font-family: "roboto", sans-serif;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 0px 10px rgb(188, 188, 188);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 40px;
+}
+.cmd .commander a:hover {
+  box-shadow: 0px 0px 30px rgb(188, 188, 188);
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  padding: 20px;
+  line-height: 30px;
+}
+footer h1 {
+  font-family: "shrikhand", sans-serif;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 20px;
+  opacity: 0, 5;
+}
+footer .links {
+  display: flex;
+  flex-direction: column;
+}
+footer .links i {
+  color: white;
+}
+footer .links a {
+  color: white;
+  text-decoration: none;
+  font-family: "roboto", sans-serif;
+}
+footer .links .proposer_rest i {
+  margin-right: 14px;
+}
+footer .links .partenaire i {
+  margin-right: 8px;
+}
+footer .links .mentions_contact {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=restaurants.css.map */
