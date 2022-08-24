@@ -194,6 +194,9 @@ section article .choose .cards {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+section article .choose .cards:hover {
+  cursor: pointer;
+}
 section article .choose .cards:active .check {
   margin-right: 0px;
 }

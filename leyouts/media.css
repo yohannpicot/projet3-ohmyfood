@@ -103,7 +103,6 @@
   }
   article #restaurants .bloc_bottom .text {
     margin-left: -70px;
-    margin-right: 160px;
   }
   article #restaurants .cards_res_nwe {
     width: 600px;
@@ -115,7 +114,6 @@
     left: 470px;
   }
   article #restaurants .cards_res_nwe:hover {
-    transform: scale(1.1);
     cursor: pointer;
   }
   article #restaurants .cards_res {
@@ -125,7 +123,6 @@
     width: 600px;
   }
   article #restaurants .cards_res:hover {
-    transform: scale(1.1);
     cursor: pointer;
   }
   article #restaurants .like .contoure {
@@ -217,7 +214,6 @@
   }
   article #restaurants .bloc_bottom .text {
     margin-left: -70px;
-    margin-right: 160px;
   }
   article #restaurants .cards_res_nwe {
     width: 600px;
