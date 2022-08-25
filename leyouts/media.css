@@ -225,7 +225,6 @@
     left: 470px;
   }
   article #restaurants .cards_res_nwe:hover {
-    transform: scale(1.1);
     cursor: pointer;
   }
   article #restaurants .cards_res {
@@ -235,7 +234,6 @@
     width: 600px;
   }
   article #restaurants .cards_res:hover {
-    transform: scale(1.1);
     cursor: pointer;
   }
   article #restaurants .like .contoure {
