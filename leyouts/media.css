@@ -1,7 +1,29 @@
 /*--------------------------- Les Couleurs---------------------------------------*/
+/*----------------------------Les Fonts-----------------------------------------*/
 @media screen and (min-width: 401px) and (max-width: 998px) {
   html {
     min-width: 401px;
+    max-width: 998px;
+  }
+  #logo {
+    width: auto;
+  }
+  #fonctionnement #selection {
+    align-items: center;
+    justify-content: baseline;
+    margin-left: 0px;
+  }
+  #fonctionnement .selection_button {
+    width: 80%;
+  }
+  article #restaurants {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 501px) and (max-width: 998px) {
+  html {
+    min-width: 501px;
     max-width: 998px;
   }
   #logo {

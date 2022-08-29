@@ -36,6 +36,50 @@
     transform: rotate(0deg);
   }
 }
+@-webkit-keyframes slid_bottom {
+  0% {
+    transform: scaleY(0.4);
+    transform-origin: 0% 100%;
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 0% 100%;
+    opacity: 1;
+  }
+}
+@keyframes slid_bottom {
+  0% {
+    transform: scaleY(0.4);
+    transform-origin: 0% 100%;
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 0% 100%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slid_right {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slid_right {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 /*---------------------------- Animations Acceuil-----------------------------------*/
 @-webkit-keyframes spinner {
   to {
@@ -74,12 +118,12 @@
   }
 }
 /*--------------------------- Les Couleurs---------------------------------------*/
+/*----------------------------Les Fonts-----------------------------------------*/
 html {
   width: 400px;
 }
 
 body {
-  font-family: "roboto", sans-serif;
   width: 400px;
 }
 
@@ -91,7 +135,7 @@ body {
 }
 .return_logo img {
   display: block;
-  width: 205px;
+  width: 200px;
   height: 35px;
   margin-left: 50px;
   margin-right: auto;
@@ -133,10 +177,10 @@ section article .titre_like {
   justify-content: space-around;
   padding-top: 50px;
   padding-bottom: 30px;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 20px;
 }
 section article .titre_like .h2 {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 25px;
   color: black;
 }
 section article .titre_like .like .plein {
@@ -163,16 +207,19 @@ section article .titre_like .like:active .plein {
 }
 section article .choose .top {
   margin-left: 20px;
+  font-family: "roboto", sans-serif;
+  font-weight: 100;
+  color: #9d9d9d;
+  font-size: 15px;
+  margin-left: 15px;
 }
 section article .choose .top .h3 {
   color: #818181;
-  font-weight: 300;
   margin-bottom: 10px;
-  margin-left: 15px;
 }
 section article .choose .top .line {
   border-top: 4px solid #99E2D0;
-  width: 10%;
+  width: 30px;
   margin-bottom: 30px;
 }
 section article .choose .cards {
@@ -187,22 +234,25 @@ section article .choose .cards {
   height: 70px;
   text-decoration: none;
   color: black;
-  -webkit-animation: appears 5s both;
-          animation: appears 5s both;
+  -webkit-animation: slid_bottom 3s;
+          animation: slid_bottom 3s;
   margin-bottom: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "roboto", sans-serif;
 }
 section article .choose .cards:hover {
   cursor: pointer;
 }
 section article .choose .cards:active .check {
   margin-right: 0px;
+  -webkit-animation: slid_right 300ms;
+          animation: slid_right 300ms;
 }
 section article .choose .cards:active .check .ok {
-  -webkit-animation: rotatecheck 1s;
-          animation: rotatecheck 1s;
+  -webkit-animation: rotatecheck 2s;
+          animation: rotatecheck 2s;
 }
 section article .choose .cards .menu_detail {
   margin-left: 20px;
@@ -222,6 +272,7 @@ section article .choose .cards .menu_detail p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  color: #9d9d9d;
 }
 section article .choose .cards .price {
   margin-right: 0px;
@@ -271,7 +322,7 @@ section article .choose .cards .check .ok {
 }
 .cmd .commander a:hover {
   box-shadow: 0px 0px 30px rgb(188, 188, 188);
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ffabe8, #ac83dd);
 }
 
 footer {
@@ -282,9 +333,9 @@ footer {
   line-height: 30px;
 }
 footer h1 {
-  font-family: "shrikhand", sans-serif;
+  font-family: "Shrikhand", sans-serif;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 20px;
   opacity: 0, 5;
 }

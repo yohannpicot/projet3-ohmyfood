@@ -9,7 +9,6 @@ html{
     width: 400px;
 }
 body{
-    font-family: 'roboto', sans-serif;
     width: 400px;
 }
 
@@ -21,7 +20,7 @@ body{
 
         img{
             display: block;
-            width: 205px;
+            width: 200px;
             height: 35px;
             margin-left: 50px;
             margin-right: auto;
@@ -60,10 +59,10 @@ section{
             justify-content: space-around;
             padding-top: 50px;
             padding-bottom: 30px;
+            font-family: $title_font;
+            font-size: 20px;
     
             .h2{
-                font-family: 'Shrikhand', sans-serif;
-                font-size: 25px;
                 color: black;
             }
             .like{
@@ -98,15 +97,18 @@ section{
         .choose{
             .top{
                 margin-left: 20px;
+                font-family: $other_font;
+                font-weight: 100;
+                color: #9d9d9d;
+                font-size: 15px;
+                margin-left: 15px;
                 .h3{
                     color: #818181;
-                    font-weight: 300;
                     margin-bottom: 10px;
-                    margin-left: 15px;
                 }
                 .line{
                     border-top: 4px solid $color_tertiaire;
-                    width: 10%;
+                    width: 30px;
                     margin-bottom: 30px;
                 }
     
@@ -123,19 +125,21 @@ section{
                 height: 70px;
                 text-decoration: none;
                 color: black;
-                animation: appears 5s both;
+                animation: slid_bottom 3s;
                 margin-bottom: 20px;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
+                font-family: $other_font;
                 &:hover{
                     cursor: pointer;
                 }
                 &:active{
                         .check{
                             margin-right: 0px;
+                            animation: slid_right 300ms;
                             .ok{
-                                animation: rotatecheck 1s;
+                                animation: rotatecheck 2s;
                             } 
                         }
                 }
@@ -157,6 +161,7 @@ section{
                         overflow: hidden;
                         text-overflow: ellipsis;
                         white-space: nowrap;
+                        color: #9d9d9d;
                     }
     
                 }
@@ -180,6 +185,7 @@ section{
                     border-top-right-radius: 15px;
                     border-bottom-right-radius: 15px;
                     padding: 0 20px 0 20px;
+                    
                     .ok{
                         font-size: 30px;
                         margin-top: auto;
@@ -211,7 +217,7 @@ section{
             border-radius: 40px;
             &:hover{
                 box-shadow: 0px 0px 30px rgb(188, 188, 188);
-                background:$color_gradient;
+                background:$color_gradient_clearup;
             }
         }
     }
@@ -224,9 +230,9 @@ footer{
     padding: 20px;
     line-height: 30px;
     h1{
-        font-family: 'shrikhand',sans-serif;
+        font-family: $title_font;
         color: white;
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 20px;
         opacity: 0,5;
     }

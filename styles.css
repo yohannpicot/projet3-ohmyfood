@@ -36,6 +36,50 @@
     transform: rotate(0deg);
   }
 }
+@-webkit-keyframes slid_bottom {
+  0% {
+    transform: scaleY(0.4);
+    transform-origin: 0% 100%;
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 0% 100%;
+    opacity: 1;
+  }
+}
+@keyframes slid_bottom {
+  0% {
+    transform: scaleY(0.4);
+    transform-origin: 0% 100%;
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 0% 100%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slid_right {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slid_right {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 /*---------------------------- Animations Acceuil-----------------------------------*/
 @-webkit-keyframes spinner {
   to {
@@ -74,6 +118,7 @@
   }
 }
 /*--------------------------- Les Couleurs---------------------------------------*/
+/*----------------------------Les Fonts-----------------------------------------*/
 html {
   max-width: 400px;
 }
@@ -110,8 +155,8 @@ html {
 }
 #logo img {
   display: block;
-  width: 300px;
-  height: 50px;
+  width: 200px;
+  height: 35px;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;
@@ -180,7 +225,7 @@ html {
 }
 #reserve #button_reserve a:hover {
   box-shadow: 0px 0px 30px rgb(188, 188, 188);
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ffabe8, #ac83dd);
 }
 
 #fonctionnement {
@@ -303,6 +348,7 @@ article .cards_res_nwe h3 {
   padding-right: 10px;
   left: 250px;
   top: 20px;
+  border-radius: 5px;
 }
 article .cards_res_nwe h4 {
   color: black;
