@@ -135,13 +135,15 @@ section{
                     cursor: pointer;
                 }
                 &:active{
+                    .price_check{
+                        animation: slid_right 800ms;
                         .check{
                             margin-right: 0px;
-                            animation: slid_right 300ms;
                             .ok{
                                 animation: rotatecheck 2s;
                             } 
                         }
+                    }
                 }
                 
                 .menu_detail{
@@ -165,31 +167,35 @@ section{
                     }
     
                 }
-                .price{
-                    margin-right: 0px;
-                    margin-left: 10px;
-                    margin-left: 10px;
-                    margin-top: 20px;
-                    p{
-                        margin-top: 10px;
-                        margin-right: 10px;
-                    }
-    
-                }
-                .check{
+                .price_check{
                     display: flex;
-                    color: white;
-                    background-color: $color_tertiaire;
-                    align-items: center;
-                    margin-right: -75px;
-                    border-top-right-radius: 15px;
-                    border-bottom-right-radius: 15px;
-                    padding: 0 20px 0 20px;
-                    
-                    .ok{
-                        font-size: 30px;
-                        margin-top: auto;
-                        margin-bottom: auto;
+                    .price{
+                        margin-right: auto;
+                        margin-left: 10px;
+                        margin-left: 10px;
+                        margin-top: 20px;
+                        p{
+                            margin-top: 10px;
+                            margin-right: 15px;
+                        }
+        
+                    }
+                    .check{
+                        display: flex;
+                        color: white;
+                        background-color: $color_tertiaire;
+                        align-items: center;
+                        margin-right: -75px;
+                        margin-left: auto;
+                        border-top-right-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                        padding: 0 20px 0 20px;
+                        
+                        .ok{
+                            font-size: 30px;
+                            margin-top: auto;
+                            margin-bottom: auto;
+                        }
                     }
                 }
             }    

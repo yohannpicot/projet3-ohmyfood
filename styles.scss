@@ -6,6 +6,7 @@
 @import "utils/variables";
 html{
     max-width: 400px;
+    min-width: 400px;
 }
 .loader{
     position:fixed;

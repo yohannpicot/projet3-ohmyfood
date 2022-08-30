@@ -245,12 +245,14 @@ section article .choose .cards {
 section article .choose .cards:hover {
   cursor: pointer;
 }
-section article .choose .cards:active .check {
-  margin-right: 0px;
-  -webkit-animation: slid_right 300ms;
-          animation: slid_right 300ms;
+section article .choose .cards:active .price_check {
+  -webkit-animation: slid_right 800ms;
+          animation: slid_right 800ms;
 }
-section article .choose .cards:active .check .ok {
+section article .choose .cards:active .price_check .check {
+  margin-right: 0px;
+}
+section article .choose .cards:active .price_check .check .ok {
   -webkit-animation: rotatecheck 2s;
           animation: rotatecheck 2s;
 }
@@ -274,27 +276,31 @@ section article .choose .cards .menu_detail p {
   white-space: nowrap;
   color: #9d9d9d;
 }
-section article .choose .cards .price {
-  margin-right: 0px;
+section article .choose .cards .price_check {
+  display: flex;
+}
+section article .choose .cards .price_check .price {
+  margin-right: auto;
   margin-left: 10px;
   margin-left: 10px;
   margin-top: 20px;
 }
-section article .choose .cards .price p {
+section article .choose .cards .price_check .price p {
   margin-top: 10px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
-section article .choose .cards .check {
+section article .choose .cards .price_check .check {
   display: flex;
   color: white;
   background-color: #99E2D0;
   align-items: center;
   margin-right: -75px;
+  margin-left: auto;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   padding: 0 20px 0 20px;
 }
-section article .choose .cards .check .ok {
+section article .choose .cards .price_check .check .ok {
   font-size: 30px;
   margin-top: auto;
   margin-bottom: auto;
